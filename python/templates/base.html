@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %} {% endblock %}</title>
+  <style>
+    h1 {
+      color: #04AA6D;
+      text-align: center;
+    }
+
+    nav {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    {% block styles %} {% endblock %}
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a id="home" href="{{ url_for('home_page') }}">Home Page</a>
+    <a id="table" href="{{ url_for('show_table') }}">Show Table</a>
+    <a id="add" href="{{ url_for('add_page') }}">Add a New Person</a>
+    <a id="delete" href="{{ url_for('delete_row') }}">Delete Person</a>
+  </nav>
+  <div>
+    {% block content %} {% endblock %}
+  </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+    #home {
+        background-color: #04AA6D;
+    }
+    
+    p {
+        color: #04AA6D;
+        font-size: 25px;
+        text-align: center; 
+    }
+{% endblock %}
+
+{% block content %}
+    <h1>{% block title %} Home Page {% endblock %}</h1>
+    <p>
+        This small site created to work with a database table. It can show the entire table, add or delete table rows. 
+    </p>
+{% endblock %}
