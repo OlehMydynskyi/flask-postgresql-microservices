@@ -6,7 +6,7 @@ To create it is enough to enter the following command:
 ```console
 $ ./autodeploy.sh apply
 ```
-To delete
+To delete:
 ```console
 $ ./autodeploy.sh delete
 ```
