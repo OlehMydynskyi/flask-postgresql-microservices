@@ -10,3 +10,4 @@ To delete:
 ```console
 $ ./autodeploy.sh delete
 ```
+[Demo](http://3.66.84.26/)
